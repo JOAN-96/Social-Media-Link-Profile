@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+:root{
+    /**Colors**/
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    /**Font**/
+    --light-weight: 400;
+    --regular-weight: 600;
+    --heavy-weight: 700;
+}
+
+body{
+    background-color: var(--off-black);
+    background-repeat: no-repeat;
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 375px;
+    border-radius: 8px;
+    background-color: var(--dark-grey);
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 40px;
+}
+
+.image{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 20%;
+    border-radius: 100px;
+}
+
+.heading{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.heading ul{
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.heading ul li h1{
+    color: var(--white);
+    font-weight: var(--heavy-weight);
+}
+
+.heading ul li p{
+    color: var(--green);
+    font-weight: var(--regular-weight);
+    font-size: 14px;
+}
+
+.detail{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.detail p{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: var(--light-weight);
+}
+
+.social-media{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul{
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-media ul li{
+    width: fit-content;
+}
+
+button{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--white);
+    border: 0;
+    font-weight: var(--heavy-weight);
+}
+
+button:hover{
+    background-color: var(--green);
+    color: var(--grey);
+    cursor: pointer;
+    animation: ease-in 0.5ms;
+}
+
+.social-media ul li button{
+    width: 300px;
+}
